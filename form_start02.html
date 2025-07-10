@@ -1,0 +1,43 @@
+
+<!-- ! 사용시 불러오는 코드 -->
+
+<!DOCTYPE html> <!-- 없어도 무관/ html 양식을 알려주는-->
+<html lang="en"> <!-- 없어도 무관 언어사용(영어)표시 / 한국어는 ko -->
+<head>
+    <meta charset="UTF-8"> 
+    <!--(문자셋 = meta charset) HTML 문서의 문자 인코딩 방식을 명시함.
+        유니코드(Unicode)를 위한 문자셋인 UTF-8(유니코드를 인코딩하는 방법)이
+         가장 많이 사용됨. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 디자인에 관한 내용 / 없어도 무관-->
+    <title>input form 연슴</title>
+</head>
+<body>
+    <form action="">
+        <!-- hidden 사용시 표시 안됨 서버에는 제공-->
+         <!-- value 기본값 정해놓고 수정가능 -->
+         <!-- input 은 한칸만 사용가능 -->
+          <!-- textarea 는 여러칸 사용 가능 -->
+        회원이름 : <input type="text" name="member_name"><br>
+        아이디 : <input type="text" name="member_id"><br>
+        비밀번호 : <input type="password" name="member_pw"><br>
+        메모장 <textarea name="" rows="15"></textarea><br>
+        <!-- rows / 세로 단위 줄 사이즈 , cols / 가로단위 줄 사이즈-->
+        이메일 : <input type="text" name="email"> @
+        <select name="email01" size="5">
+            <option value="naver" selected>naver.com</option>
+            <option value="daum">daum.net</option>
+            <option value="gmail">gmail.com</option><br>
+            <!--( select , option )으로 선택가능 / (selected)추가시 가장 먼저 표시 
+           ( size )추가로 세로 사이즈 조정가능(선택지 들어갈 갯수만큼) 
+           ( multiple )추가로 다중선택 가능 -->
+        거주지 : <input type="text" value="서울" readonly>
+                    <!-- readonly 기본값을 수정못하게 하는 -->
+        </select><br>
+        
+        
+        <input type="submit" value="로그인">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>

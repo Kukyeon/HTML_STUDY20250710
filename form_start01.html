@@ -1,0 +1,44 @@
+<html>
+    <head></head>
+    <body>
+        <h1>회원 가입 양식</h1>
+        <hr> <!---->
+        <form action="result.html">
+            <lable>아 이 디 : <input type="text" size="20" id="member_id" name="member_id"></lable><br>
+            <lable>비밀번호 : <input type="password" id="member_pw" name="member_pw"><br>
+            <label>이 름 : <input type="text" size="20" id="member_name" name="member_name"></label><br>
+            <label>전화번호 : <input type="text" size="5" id="phone1" name="phone1">-
+                            <input type="text" size="5" id="phone2" name="phone2">-
+                            <input type="text" size="5" id="phone3" name="phone3"></label>
+                <br>
+                회사전화 : <input type="tel" name="officephone" id="officephone"> <br>
+                이메일 : <input type="email" name="email" id="email"> <br>
+                성별 : <input type="radio" name="gender" value="male" checked>남 
+                        <input type="radio" name="gender" value="female">여 <br>
+                        <!-- radio 필수선택해야하는 체크박스-->
+                취미 : <input type="checkbox" name="hobby" value="sports"> 스포츠
+                        <input type="checkbox" name="hobby" value="movie"> 영화
+                        <input type="checkbox" name="hobby" value="book"> 독서
+                        <input type="checkbox" name="hobby" value="game"> 게임 <br>
+                        <!-- checkbox 체크 필수선택 X -->
+                        보유 스마트폰 대수 : <input type="number" min="0" max="3" value="1"> <br>
+                        나이 : <input type="range" name="member_age" id="" min="20" max="50" value="35"> <br>               
+                        생일 : <input type="date" name="birth"><!--년,월,일--><br>
+                        <input type="month" name="birth"><!--년,월--> <br>
+                        <input type="week" name="birth"><!--년,몇번째주--> <br>
+                        <input type="time" name="birth"><!--시간--> 
+                        <input type="checkbox" name="i_don_t_no">모름 <br>
+                        <input type="datetime-local" name="birth"> <!--년,월,일,시간--> <br>
+                        예약 : <input type="date" min="2025-07-20" max="2025-07-30"> <br>
+                        <!-- min,max로 날자 범위 제한하게 하는 -->
+                        사진첨부 : <input type="file">
+                        <!-- 날자 지정 및 잠금 -->
+                        <br><input type="submit" value="회원가입">
+                        <!-- 입력한 정보들을 서버로 전송 -->
+                        <input type="reset" value="다시입력">
+                        <input type="button" value="뒤로가기" onclick="window.open( 'image.html', '_blank', 'width=300', 'height=400' )"> 
+                        <input type="image" src="images/login.png">
+                        <!-- 초기화 리셋 참 쉽죠잉 -->
+        </form>
+    </body>
+</html>
